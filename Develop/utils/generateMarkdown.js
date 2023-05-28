@@ -23,7 +23,9 @@ function renderLicenseLink(license) {
     return "[Apache 2.0](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "GNU GPL v3") {
     return "[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0)";
-  } else {
+  } else if (license === "IBM Public License Version 1.0")
+    return "[IBM Public License Version 1.0](https://opensource.org/licenses/IPL-1.0)"
+  else {
     return "";
   }
 }
@@ -43,11 +45,51 @@ This project is licensed under the ${renderLicenseLink(license)} license.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
-  const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
   return `# ${data.title}
 
-`;
-}
+  ${licenseBadge}
+  
+  ## Description
+  
+  ${data.description}
+  
+  ## Table of Contents
+  
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  
+  ## Installation
+  
+  ${data.installation}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ##License
 
-module.exports = generateMarkdown;
+  ${licenseSection}
+  
+  ## Contributing
+  
+  ${data.contributing}
+  
+  ## Tests
+  
+  ${data.tests}
+  
+  ## Questions
+  
+  If you have any questions, feel free to reach out to me:
+  
+  - GitHub: [${data.username}](https://github.com/${data.username})
+  - Email: ${data.email}
+  `;
+  }
+  
+  module.exports = generateMarkdown;
