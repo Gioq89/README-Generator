@@ -23,6 +23,10 @@
   
   Link to video walkthrough - https://drive.google.com/file/d/1Ag729hAzqy3k4yMUg8L1zUMXeP57sPqN/view
   
+  Screenshot
+  
+  <img src="Develop/Screenshot Readme Generator.png">
+  
   ## License
 
   This project is licensed under the  license.
