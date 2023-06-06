@@ -2,7 +2,7 @@
 
   ## Description
   
-  This is a command-line application that dynamically generates a professional REAM.md file. 
+  This is a command-line application that dynamically generates a professional REAME.md file. 
   
   ## Table of Contents
   
