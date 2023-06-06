@@ -23,8 +23,6 @@
   
   Link to video walkthrough - https://drive.google.com/file/d/1Ag729hAzqy3k4yMUg8L1zUMXeP57sPqN/view
   
-  ##License
-
   ## License
 
   This project is licensed under the  license.
